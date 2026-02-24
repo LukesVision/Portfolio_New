@@ -100,3 +100,67 @@ body { background: var(--bg); color: #fff; font-family: 'Inter', sans-serif; mar
     padding-top: 20px;
     margin-top: 40px;
 }
+
+
+/* --- FIX MOBILE RESPONSIVE --- */
+
+@media (max-width: 768px) {
+    /* Ridimensioniamo i titoloni della Home */
+    .rockstar-title { 
+        font-size: 25vw !important; /* Più grande per riempire lo schermo in verticale */
+        line-height: 0.9;
+    }
+    
+    .rockstar-title-footer {
+        font-size: 20vw !important;
+    }
+
+    /* La Bio: da due colonne a una sopra l'altra */
+    .bio-grid {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .bio-lead {
+        font-size: 1.8rem !important;
+    }
+
+    .bio-image img {
+        box-shadow: 10px 10px 0 #000; /* Ombra più piccola su mobile */
+    }
+
+    /* System Specs: le card una sotto l'altra */
+    .specs-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Pulsanti del Footer: uno sopra l'altro per non farli uscire dallo schermo */
+    .btn-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-heavy {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    /* Email Link: riduciamo la dimensione per non farla tagliare */
+    .email-link {
+        font-size: 8vw !important;
+    }
+
+    /* Sezione Works (Zaragoza/Gallery): griglia singola */
+    .works-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .work-link-card {
+        height: 350px !important; /* Più basse su mobile per facilitare lo scroll */
+    }
+
+    .work-title {
+        font-size: 12vw !important;
+    }
+}
