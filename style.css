@@ -164,3 +164,50 @@ body { background: var(--bg); color: #fff; font-family: 'Inter', sans-serif; mar
         font-size: 12vw !important;
     }
 }
+
+/* --- GALLERY MOBILE FIX --- */
+@media (max-width: 768px) {
+    #photo-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* Forza 2 colonne */
+        gap: 4px !important; /* Spazio minimo tra le foto stile Instagram */
+        padding: 4px !important;
+    }
+
+    .rockstar {
+        font-size: 18vw !important; /* Ridimensiona il titolo THE VAULT */
+    }
+
+    header {
+        padding: 40px 0 !important;
+    }
+}
+
+/* --- ZARAGOZA MOBILE & ALIGNMENT FIX --- */
+.zaragoza-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permette di andare a capo su mobile */
+    gap: 40px;
+    align-items: center; /* Centra verticalmente video e testo */
+    justify-content: center;
+}
+
+.video-column {
+    flex: 1 1 350px; /* Base di 350px, può crescere */
+    max-width: 400px;
+}
+
+.desc-column {
+    flex: 1 1 450px; /* Il testo prende il resto dello spazio */
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .desc-column {
+        text-align: center; /* Centra il testo solo su mobile */
+    }
+    
+    .rockstar {
+        font-size: 15vw !important;
+    }
+}
+
