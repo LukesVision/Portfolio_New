@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUKE'S VISION - Photography, Video Production, Film Editing & Cinematic Visual Stories">
+    <meta name="theme-color" content="#080808">
+    
+    <title>LUKE'S VISION | Photography & Videography Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h1>LUKE'S VISION</h1>
+            </div>
+            
+            <p class="loading-subtitle">VISUAL STORIES / MOVING IMAGES / CREATIVE PROCESS</p>
+            
+            <div class="viewfinder-loader">
+                <div class="viewfinder-frame">
+                    <div class="crosshair"></div>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text"><span id="progressPercent">00</span>%</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ========== CUSTOM CURSOR ========== -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+    
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home" class="logo-link">LUKE'S VISION</a>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="work.html" class="nav-link" data-section="work">WORK</a></li>
+                <li><a href="photography.html" class="nav-link" data-section="photography">PHOTOGRAPHY</a></li>
+                <li><a href="video.html" class="nav-link" data-section="video">VIDEO</a></li>
+                <li><a href="about.html" class="nav-link" data-section="about">ABOUT</a></li>
+                <li><a href="skills.html" class="nav-link" data-section="skills">SKILLS</a></li>
+                <li><a href="contact.html" class="nav-link" data-section="contact">CONTACT</a></li>
+            </ul>
+            
+            <div class="navbar-right">
+                <div class="availability-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">AVAILABLE FOR SELECTED PROJECTS</span>
+                </div>
+                <a href="work.html" class="btn btn-primary">VIEW SELECTED WORK</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- ========== HERO SECTION ========== -->
+    <header id="home" class="hero">
+        <div class="hero-background" style="background-image: url('photos/nature/hero.webp');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="hero-viewfinder">
+                <div class="viewfinder-border top-left"></div>
+                <div class="viewfinder-border top-right"></div>
+                <div class="viewfinder-border bottom-left"></div>
+                <div class="viewfinder-border bottom-right"></div>
+                <div class="viewfinder-crosshair"></div>
+                <div class="viewfinder-grid"></div>
+            </div>
+            
+            <div class="hero-text">
+                <h1 class="hero-title">LUKE'S VISION</h1>
+                <p class="hero-subtitle">PHOTOGRAPHY / VIDEO / EDITING / FILM</p>
+                <p class="hero-tagline">Visual stories shaped through photography, motion and cinematic experimentation.</p>
+            </div>
+            
+            <div class="hero-meta">
+                <div class="hero-timestamp">
+                    <span class="timestamp-label">TIMESTAMP</span>
+                    <span class="timestamp-value" id="heroTime">00:00:00</span>
+                </div>
+                <div class="hero-counter">
+                    <span class="counter-label">PROJECTS</span>
+                    <span class="counter-value">03</span>
+                </div>
+            </div>
+            
+            <div class="hero-ctas">
+                <a href="work.html" class="btn btn-primary">EXPLORE THE WORK</a>
+                <a href="contact.html" class="btn btn-secondary">GET IN TOUCH</a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ========== INTRO SECTION ========== -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2 class="intro-title">CINEMATIC VISION. TECHNICAL MINDSET.</h2>
+                <p class="intro-text">
+                    I combine photography, video production and digital post-production to create visual work with a strong cinematic identity. 
+                    I am continuously developing my skills in editing, color grading and short-film production.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== SELECTED WORK ========== -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <h2 class="section-title">SELECTED WORK</h2>
+            
+            <div class="work-grid">
+                <article class="work-card work-card-large">
+                    <video class="work-video" src="Vids/EnergyFitness.mp4" poster="photos/productions/1000144522.JPG.webp" autoplay muted loop playsinline preload="metadata"></video>
+                    <div class="work-overlay"></div>
+                    <div class="work-content">
+                        <h3 class="work-title">ZARAGOZA OPS</h3>
+                        <p class="work-role">Video Production // Energie Fitness</p>
+                        <span class="work-year">2024</span>
+                    </div>
+                </article>
+                
+                <article class="work-card">
+                    <div class="work-image" style="background-image: url('photos/productions/Monster-Commercial-Ad.webp');"></div>
+                    <div class="work-overlay"></div>
+                    <div class="work-content">
+                        <h3 class="work-title">MONSTER COMMERCIAL</h3>
+                        <p class="work-role">Commercial AD / Editing</p>
+                        <span class="work-year">2024</span>
+                    </div>
+                </article>
+                
+                <article class="work-card">
+                    <div class="work-image" style="background-image: url('photos/productions/cola_ad.webp');"></div>
+                    <div class="work-overlay"></div>
+                    <div class="work-content">
+                        <h3 class="work-title">COLA AD</h3>
+                        <p class="work-role">Commercial / Post-Production</p>
+                        <span class="work-year">2023</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== PHOTOGRAPHY GALLERY ========== -->
+    <section id="photography" class="photography-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PHOTOGRAPHY</h2>
+                <p class="section-description">
+                    Photography is the starting point: a way to observe light, movement, texture and human presence.
+                </p>
+            </div>
+            
+            <div class="masonry-grid" id="masonryGrid">
+                <!-- Immagini inserite dinamicamente -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== LIGHTBOX MODAL ========== -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photography viewer">
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="Gallery Image" class="lightbox-img">
+            <div class="lightbox-controls">
+                <button id="lightboxPrev" class="lightbox-btn lightbox-prev" aria-label="Previous image">
+                    <span>←</span>
+                </button>
+                <div class="lightbox-counter">
+                    <span id="lightboxCurrent">1</span> / <span id="lightboxTotal">77</span>
+                </div>
+                <button id="lightboxNext" class="lightbox-btn lightbox-next" aria-label="Next image">
+                    <span>→</span>
+                </button>
+            </div>
+            <button id="lightboxClose" class="lightbox-close" aria-label="Close lightbox">
+                <span>✕</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- ========== VIDEO & FILM PRODUCTION ========== -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2 class="section-title">VIDEO & FILM PRODUCTION</h2>
+            
+            <div class="showreel-card">
+                <div class="showreel-thumbnail" style="background-image: url('About_me/Setup.jpeg');"></div>
+                <div class="showreel-overlay"></div>
+                <button class="play-button" id="playButton">
+                    <span class="play-icon">▶</span>
+                </button>
+                <div class="showreel-content">
+                    <h3>ZARAGOZA OPS</h3>
+                    <p>Video Production // Energie Fitness</p>
+                </div>
+            </div>
+            
+            <div class="video-development">
+                <h3>IN DEVELOPMENT</h3>
+                <div class="dev-grid">
+                    <div class="dev-card">
+                        <h4>REGIA</h4>
+                        <p>Conceptualization & Shot Planning</p>
+                    </div>
+                    <div class="dev-card">
+                        <h4>MONTAGGIO</h4>
+                        <p>Editing & Timeline Organization</p>
+                    </div>
+                    <div class="dev-card">
+                        <h4>COLOR GRADING</h4>
+                        <p>DaVinci Resolve & Cinematic Look</p>
+                    </div>
+                    <div class="dev-card">
+                        <h4>SOUND DESIGN</h4>
+                        <p>Audio Production & Mixing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="about-image-main"><img src="About_me/School.jpeg" alt="Luke at school in a graphic design environment"></div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>MY STORY</h3>
+                    <p>
+                        I'm a student at Istituto Silvio D'Arzo, focused on integrating visual aesthetics, audiovisual production, 
+                        and ICT programming. My journey spans photography, video production, and digital post-production, 
+                        with a commitment to creating work with strong cinematic identity.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <h4>LEADERSHIP</h4>
+                            <p>Airsoft Team Captain</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>CERTIFICATION</h4>
+                            <p>BLSD / DAE Certified</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>FITNESS</h4>
+                            <p>Calisthenics Practitioner</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>LANGUAGES</h4>
+                            <p>English B2 Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== SKILLS ========== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">SKILLS & TECHNICAL WORKFLOW</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>VISUAL</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge confident">Adobe Premiere Pro</span>
+                        <span class="skill-badge confident">DaVinci Resolve</span>
+                        <span class="skill-badge confident">Photoshop</span>
+                        <span class="skill-badge working">Maya</span>
+                        <span class="skill-badge working">InDesign</span>
+                        <span class="skill-badge confident">Color Grading</span>
+                        <span class="skill-badge confident">Video Editing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>TECHNICAL</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge working">C++</span>
+                        <span class="skill-badge working">JavaScript</span>
+                        <span class="skill-badge developing">C#</span>
+                        <span class="skill-badge confident">HTML</span>
+                        <span class="skill-badge developing">Tailwind CSS</span>
+                        <span class="skill-badge working">Digital Workflow</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>FILMMAKING</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge working">Pre-production</span>
+                        <span class="skill-badge confident">Post-production</span>
+                        <span class="skill-badge confident">Visual Storytelling</span>
+                        <span class="skill-badge developing">Short-Film Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ========== SERVICES ========== -->
+<section class="services-section">
+    <div class="container">
+        <h2 class="section-title">SERVICES</h2>
+
+        <div class="services-grid">
+            <a href="#contact" class="service-card">
+                <h3>Servizio fotografico</h3>
+                <p>Scatti pensati per raccontare immagini autentiche, con attenzione a luce, composizione e atmosfera.</p>
+            </a>
+
+            <a href="#contact" class="service-card">
+                <h3>Servizio video</h3>
+                <p>Produzione video con approccio cinematografico: storytelling, ritmo e impatto visivo.</p>
+            </a>
+
+            <a href="#contact" class="service-card">
+                <h3>Collaborazioni</h3>
+                <p>Aperto a progetti creativi, brand e collaborazioni artistiche con una visione condivisa.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">LET'S CREATE SOMETHING VISUAL</h2>
+            <div class="contact-content">
+                <form class="contact-form" action="mailto:imlukas64@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">NAME</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                    <label for="project">PROJECT TYPE</label>
+                    <select id="project" name="project" required>
+                        <option value="">SELECT A SERVICE</option>
+                            <option>Photography Service</option>
+                            <option>Video Service</option>
+                            <option>Collaborations</option>
+                    </select>
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <button class="btn btn-primary" type="submit">SEND INQUIRY</button>
+                </form>
+                <div class="contact-details">
+                    <p class="contact-label">DIRECT CONTACT</p>
+                    <a class="contact-email" href="mailto:imlukas64@gmail.com">imlukas64@gmail.com</a>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                        <a href="#" aria-label="iStock">iStock</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <span>© 2026 LUKE'S VISION ALL RIGHTS RESERVED</span>
+            <a href="#">PRIVACY POLICY</a>
+            <span class="footer-availability"><span class="badge-dot"></span> AVAILABLE FOR SELECTED PROJECTS</span>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
